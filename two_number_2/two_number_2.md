@@ -54,6 +54,10 @@ public:
 };
 ```
 
+新建链表并赋初始值 0
+
+ListNode *vhead=new ListNode(0);
+
 
 
 
