@@ -58,6 +58,10 @@ public:
 
 ListNode *vhead=new ListNode(0);
 
-
-
-
+**Point**：当两条连表都仅有一个节点时，产生进位需要单独处理
+例如：
+```c++
+ if(sum){
+           tmp->next=new ListNode(1);
+       }
+```
