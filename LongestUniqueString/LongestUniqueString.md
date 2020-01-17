@@ -29,7 +29,19 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        
+       int len=s.length();
+       unordered_map<int,int> record;
+       int max=0;
+       for(int j=0;j<len;j++){
+            for(int i=j;i<len;i++){
+                if(record.find(s[i])!=record.end())break;
+                record[s[i]]=i;
+            if(max<=record.size())
+                max=record.size();
+            }
+            record.clear();
+        }
+        return max;
     }
 };
 ```
