@@ -26,6 +26,7 @@
 
 ### CODE
 ```c++
+//myCode
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -44,4 +45,8 @@ public:
         return max;
     }
 };
+
+//GoodCode
+
+
 ```
