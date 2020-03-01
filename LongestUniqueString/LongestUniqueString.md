@@ -30,19 +30,19 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-       int len=s.length();
-       unordered_map<int,int> record;
-       int max=0;
-       for(int j=0;j<len;j++){
-            for(int i=j;i<len;i++){
-                if(record.find(s[i])!=record.end())break;
-                record[s[i]]=i;
-            if(max<=record.size())
+      int len = s.length();int max = 0;
+      unordered_map <int,int> record;
+      for (int i = 0 ; i < len ; i++){
+          if(record.find(s[i]) == record.end()){
+              record[s[i]] =i ;
+              if(max<record.size())
                 max=record.size();
-            }
-            record.clear();
-        }
-        return max;
+          }else{
+              i=record[s[i]];
+              record.clear();
+          }
+      }
+      return max;
     }
 };
 
@@ -61,7 +61,7 @@ public:
                 r++;
                 freq[s[r]]++;
             }else {   //r已经到头 || freq[s[r+1]] == 1
-                freq[s[l]]--;
+                freq[s[l]]--;// 这里向右滑动
                 l++;
             }
             res = max(res, r-l+1);
