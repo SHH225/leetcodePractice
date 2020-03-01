@@ -44,16 +44,21 @@ public:
 		unordered_map<int, int> record;
 		for (int i = 0; i < nums.size(); i++) {
 			int complement = target - nums[i];
+			//查找符合条件数字，若找到即未到结尾，赋值 i 及对应的value的位置
 			if (record.find(complement) != record.end()) {
 				int res[] = { i, record[complement] };
-				return vector<int>(res,res+2);
+				return vector<int>(res,res+2);//返回res[0],res[1]也行，这个位置是地址才+2
 			}
-			record[nums[i]] = i;
+			record[nums[i]] = i;//记到map上 key-value
 		}
-        		return {-1,-1};
+        		return {-1,-1};//没找到的返回 
 	}
 };
 ```
+
+顺序容器（vector）
+关联容器 （map）支持高效的关键字查找访问 （即：<key,value>）![截屏2020-03-01上午10.34.27](https://tva1.sinaimg.cn/large/00831rSTly1gce83t3p34j310q0g2qc4.jpg)
+
 
 
 
