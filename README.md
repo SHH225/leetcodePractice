@@ -6,4 +6,5 @@
 * [最长无重复子串](./LongestUniqueString/LongestUniqueString.md)
 * [寻找两个有序数组的中位数](./FindMedianSortedArrays/findMedianSortedArrays.md)
 * [最长回文数](./longestPalindrome/longestPalindrome.md)
+* [Z字变换](./convert/convert.md)
 
