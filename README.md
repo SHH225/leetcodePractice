@@ -9,3 +9,4 @@
 * [Z字变换](./convert/convert.md)
 * [整数反转](./reverse/reverse.md)
 * [字符串转整数](./myAtoi/myAtoi.md)
+* [回文数](./isPalindrome/isPalindrome.md)
