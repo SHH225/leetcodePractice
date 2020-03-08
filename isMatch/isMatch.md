@@ -53,7 +53,23 @@ p = "mis*is*p*."
 class Solution {
 public:
     bool isMatch(string s, string p) {
+     if (s==p) {
+        return true;
+    }
 
+    bool isFirstMatch = false;
+    if (s.length()>0 && p.length()>0 && (s[0] == p[0] || p[0] == '.')) {
+        isFirstMatch = true;
+    }
+
+    if (p.length() >= 2 && p[1] == '*') {
+        // 看 s[i,...n] 和 p[j+2,...m] 或者是 s[i+1,...n] 和 p[j,...m]
+        return isMatch(s, p.substr(2))
+                 || (isFirstMatch && isMatch(s.substr(1), p));
+    }
+
+    // 看 s[i+1,...n] 和 p[j+1,...m]
+    return isFirstMatch && isMatch(s.substr(1), p.substr(1));
     }
 };
 ```
