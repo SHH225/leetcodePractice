@@ -15,5 +15,8 @@
 * [整数转罗马数字](./intToRoman/intToRoman.md)
 * [罗马数字转整数](./romanToInt/romanToInt.md)
 * [最长公共前缀](./longestCommonPrefix/longestCommonPrefix.md)
-
+* [ 删除链表的倒数第N个节点](./removeNthFromEnd/removeNthFromEnd.md)
+* [ 合并两个有序链表](./mergeTwoLists/mergeTwoLists.md)
+* [反转链表](./reverseList/reverseList.md)
+* [删除链表中的节点](./deleteNode/deleteNode.md)
 
