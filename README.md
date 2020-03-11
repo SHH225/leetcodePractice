@@ -19,4 +19,5 @@
 * [ 合并两个有序链表](./mergeTwoLists/mergeTwoLists.md)
 * [反转链表](./reverseList/reverseList.md)
 * [删除链表中的节点](./deleteNode/deleteNode.md)
-
+* [环形链表](./hasCycle/hasCycle.md)
+* [二叉树的最大深度](./maxDepth/maxDepth.md)
