@@ -22,3 +22,5 @@
 * [环形链表](./hasCycle/hasCycle.md)
 * [二叉树的最大深度](./maxDepth/maxDepth.md)
 * [验证二叉搜索树](./isValidBST/isValidBST.md)
+* [对称二叉树](.isSymmetric/isSymmetric.md)
+* [二叉树的层次遍历](.levelOrder/levelOrder.md)
