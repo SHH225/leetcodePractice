@@ -24,3 +24,4 @@
 * [验证二叉搜索树](./isValidBST/isValidBST.md)
 * [对称二叉树](./isSymmetric/isSymmetric.md)
 * [二叉树的层次遍历](./levelOrder/levelOrder.md)
+* [有序数组转二叉搜索树](./sortedArrayToBST/sortedArrayToBST.md)
