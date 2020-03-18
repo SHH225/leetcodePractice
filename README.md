@@ -25,3 +25,5 @@
 * [对称二叉树](./isSymmetric/isSymmetric.md)
 * [二叉树的层次遍历](./levelOrder/levelOrder.md)
 * [有序数组转二叉搜索树](./sortedArrayToBST/sortedArrayToBST.md)
+* [合并两个有序数组](./merge/merge.md)
+* [第一个错误的版本](./firstBadVersion/firstBadVersion.md)
