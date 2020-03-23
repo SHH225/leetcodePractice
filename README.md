@@ -29,4 +29,4 @@
 * [第一个错误的版本](./firstBadVersion/firstBadVersion.md)
 * [爬楼梯](./climbStairs/climbStairs.md)
 * [买卖股票的最佳时机](./maxProfit/maxProfit.md)
-
+* [最大子序和](./maxSubArray/maxSubArray.md)
