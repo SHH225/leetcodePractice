@@ -30,3 +30,6 @@
 * [爬楼梯](./climbStairs/climbStairs.md)
 * [买卖股票的最佳时机](./maxProfit/maxProfit.md)
 * [最大子序和](./maxSubArray/maxSubArray.md)
+* [打家劫舍](./rob/rob.md)
+* [打乱数组](./shuffle/shuffle.md)
+* [最小栈](./MinStack/MinStack.md)
