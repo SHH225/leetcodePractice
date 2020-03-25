@@ -33,3 +33,4 @@
 * [打家劫舍](./rob/rob.md)
 * [打乱数组](./shuffle/shuffle.md)
 * [最小栈](./MinStack/MinStack.md)
+* [字符串中的第一个唯一字符](./firstUniqChar/firstUniqChar.md)
