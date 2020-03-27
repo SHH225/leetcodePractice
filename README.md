@@ -34,3 +34,6 @@
 * [打乱数组](./shuffle/shuffle.md)
 * [最小栈](./MinStack/MinStack.md)
 * [字符串中的第一个唯一字符](./firstUniqChar/firstUniqChar.md)
+* [快乐数](./isHappy/isHappy.md)
+* [两个数组的交集](./intersection/intersection.md)
+* [ 只出现一次的数字](./singleNumber/singleNumber.md)
