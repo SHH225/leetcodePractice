@@ -37,3 +37,7 @@
 * [快乐数](./isHappy/isHappy.md)
 * [两个数组的交集](./intersection/intersection.md)
 * [ 只出现一次的数字](./singleNumber/singleNumber.md)
+* [同构字符串](./isIsomorphic/isIsomorphic.md)
+* [ 两个列表的最小索引总和](./findRestaurant/findRestaurant.md)
+* [ 两个数组的交集 II](./intersect/intersect.md)
+

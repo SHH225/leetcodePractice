@@ -33,6 +33,23 @@ public:
       return -1;
     }
 };
+
+//use hashmap 
+class Solution {
+public:
+    int firstUniqChar(string s) {
+        unordered_map<char,int> m;
+        for(char i:s){
+            m[i]++;
+        }
+        for(int i=0;i<s.length(); i++){
+            auto it=m.find(s[i]);
+             if(it->second<2)return i;
+        }
+      return -1;
+    }
+};
+
 ```
 
 构造记数数组，便于后续单次字符的出现查找
