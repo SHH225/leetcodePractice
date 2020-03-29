@@ -40,4 +40,7 @@
 * [同构字符串](./isIsomorphic/isIsomorphic.md)
 * [ 两个列表的最小索引总和](./findRestaurant/findRestaurant.md)
 * [ 两个数组的交集 II](./intersect/intersect.md)
-
+* [剑指 5 - 替换空格](./replacespace/replacespace.md)
+* [剑指 6 - 链表反向打印/反转](./reverseprint/reverseprint.md)
+* [存在相同的元素II](./containsNearbyDuplicate/containsNearbyDuplicate.md)
+* [字母异位词分组](./groupAnagrams/groupAnagrams.md)
