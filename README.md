@@ -44,3 +44,5 @@
 * [剑指 6 - 链表反向打印/反转](./reverseprint/reverseprint.md)
 * [存在相同的元素II](./containsNearbyDuplicate/containsNearbyDuplicate.md)
 * [字母异位词分组](./groupAnagrams/groupAnagrams.md)
+* [剑指 7 - 重建二叉树](./rebuildTree/rebuildTree.md)
+* [剑指 8 - 二叉树的下一个节点](./nextNode/nextNode.md)
