@@ -46,3 +46,4 @@
 * [字母异位词分组](./groupAnagrams/groupAnagrams.md)
 * [剑指 7 - 重建二叉树](./rebuildTree/rebuildTree.md)
 * [剑指 8 - 二叉树的下一个节点](./nextNode/nextNode.md)
+* [剑指 9 - 使用两个栈实现队列/两个队列实现栈](./CStackandCQueue/CStackandCQueue.md)
