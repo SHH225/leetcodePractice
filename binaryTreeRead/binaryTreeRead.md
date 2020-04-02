@@ -117,17 +117,23 @@ void inprintTree(TreeNode* root){
 void bacprintTree(TreeNode* root){
     stack<TreeNode*> s;
     TreeNode* lastvist=root;
-    
     if(root==nullptr)return;
-//    while(root!=nullptr||!s.empty()){
-//        if(root){
-//            s.push(root);
-//            root=root->left;
-//        }else{
-//            root=s.top();
-//
-//        }
-//    }
+    while(root!=nullptr||!s.empty()){
+        if(root){
+            s.push(root);
+            root=root->left;
+        }else{
+            root=s.top();
+            if(root->right==nullptr||lastvist==root->right){
+                 cout<<root->value<<" ";
+                lastvist=root;
+                 s.pop();
+                root=nullptr;
+            }else{
+            root=root->right;
+            }
+        }
+    }
     
 }
 void levelprintTree(TreeNode* root){
@@ -148,13 +154,12 @@ int main(){
     TreeNode* root=ConstructTree(pre,ino,8);
     printTree(root);
     cout<<endl;
-//    bacprintTree(root);
-    preprintTree(root);
-  	inprintTree(root);
+    bacprintTree(root);
     levelprintTree(root);
     
     return 0;
 }
+
 ```
 
 二叉树的几种遍历方式。前序遍历、中序遍历、后序遍历、层次遍历 （非递归方式）
