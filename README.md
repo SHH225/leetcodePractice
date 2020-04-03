@@ -49,3 +49,4 @@
 * [剑指 9 - 使用两个栈实现队列/两个队列实现栈](./CStackandCQueue/CStackandCQueue.md)
 * [二叉树的遍历方式](./binaryTreeRead/binaryTreeRead.md)
 * [剑指 11 - 旋转数组的最小数字/快速排序](./findmininRotate/findmininRotate.md)
+* [剑指 12 - 矩阵中的路径](./findpathinMatrix/findpathinMatrix.md)
