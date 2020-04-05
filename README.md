@@ -50,3 +50,5 @@
 * [二叉树的遍历方式](./binaryTreeRead/binaryTreeRead.md)
 * [剑指 11 - 旋转数组的最小数字/快速排序](./findmininRotate/findmininRotate.md)
 * [剑指 12 - 矩阵中的路径](./findpathinMatrix/findpathinMatrix.md)
+* [剑指 13 - 机器人的运动范围](./moveground/moveground.md)
+* [isValidSudoku](./isValidSudoku/isValidSudoku.md)
