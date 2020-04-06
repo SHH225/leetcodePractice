@@ -52,3 +52,4 @@
 * [剑指 12 - 矩阵中的路径](./findpathinMatrix/findpathinMatrix.md)
 * [剑指 13 - 机器人的运动范围](./moveground/moveground.md)
 * [isValidSudoku](./isValidSudoku/isValidSudoku.md)
+* [剑指 14 - 剪绳子](./ropecut/ropecut.md)
