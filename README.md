@@ -53,3 +53,4 @@
 * [剑指 13 - 机器人的运动范围](./moveground/moveground.md)
 * [isValidSudoku](./isValidSudoku/isValidSudoku.md)
 * [剑指 14 - 剪绳子](./ropecut/ropecut.md)
+* [剑指 15 - 二进制中1的个数](./numof1/numof1.md)
