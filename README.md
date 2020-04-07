@@ -55,3 +55,4 @@
 * [剑指 14 - 剪绳子](./ropecut/ropecut.md)
 * [剑指 15 - 二进制中1的个数](./numof1/numof1.md)
 * [剑指 16 - 数值的整数次方](./powernum/powernum.md)
+* [寻找重复的子树](./findDuplicateSubtrees/findDuplicateSubtrees.md)
