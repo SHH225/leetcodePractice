@@ -57,3 +57,4 @@
 * [剑指 16 - 数值的整数次方](./powernum/powernum.md)
 * [寻找重复的子树](./findDuplicateSubtrees/findDuplicateSubtrees.md)
 * [等比数列求和（大数）](./largemulti/largemulti.md)
+* [最长的刀](./knife/knife.md)
