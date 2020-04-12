@@ -58,3 +58,4 @@
 * [寻找重复的子树](./findDuplicateSubtrees/findDuplicateSubtrees.md)
 * [等比数列求和（大数）](./largemulti/largemulti.md)
 * [最长的刀](./knife/knife.md)
+* [集合操作](./numbermanul/numbermanul.md)
