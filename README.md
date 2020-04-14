@@ -59,3 +59,5 @@
 * [等比数列求和（大数）](./largemulti/largemulti.md)
 * [最长的刀](./knife/knife.md)
 * [集合操作](./numbermanul/numbermanul.md)
+* [切木头](./cutwood/cutwood.md)
+* [剑指 17 - 大数输出](./outputlarge/outputlarge.md)
