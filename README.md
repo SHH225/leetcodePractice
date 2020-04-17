@@ -63,3 +63,4 @@
 * [剑指 17 - 大数输出](./outputlarge/outputlarge.md)
 * [剑指 18 - 删除链表节点/删除重复节点](./deletnodedul/deletnodedul.md)
 * [开两个线程交替输出](./threadswitchOutput/threadswitchOutput.md)
+* [找到两个数组中相差最小的两个数](./findmincutintwoseq/findmincutintwoseq.md)
