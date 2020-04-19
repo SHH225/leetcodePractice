@@ -66,3 +66,4 @@
 * [找到两个数组中相差最小的两个数](./findmincutintwoseq/findmincutintwoseq.md)
 * [剑指 20 -  表示数值的字符串](./numinstr/numinstr.md)
 * [剑指 22 -  链表的倒数第k个节点](./backkoflist/backkoflist.md)
+* [剑指 23 -  寻找链表入口处节点](./findcirclein/findcirclein.md)
