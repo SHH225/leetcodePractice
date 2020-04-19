@@ -45,5 +45,72 @@ public:
         return head->next;
     }
 };
+
+
+//merge to l1
+#include <iostream>
+using namespace std;
+struct ListNode{
+    int val;
+    ListNode* next;
+    ListNode(int x):val(x),next(nullptr){}
+};
+void printl(ListNode* head){
+    while(head){
+        cout<<head->val<<" ";
+        head=head->next;
+    }
+    cout<<endl;
+}
+ListNode* mergel(ListNode* root1,ListNode* root2){
+    if(root1==nullptr&&root2==nullptr)return nullptr;
+    if(root1==nullptr&&root2!=nullptr)return root2;
+    if(root2==nullptr&&root1!=nullptr)return root1;
+    
+    if(root1->val>root2->val)return mergel(root2, root1);
+    ListNode* node1=root1;
+    ListNode* node2=root2;
+    while(node1->next&&node2){
+        if(node1->val<=node2->val){
+            if(node1->next->val>=node2->val){
+                ListNode* temp=node2->next;
+                node2->next=node1->next;
+                if(temp!=nullptr)
+                node1->next=node2;
+                node2=temp;
+            }
+            node1=node1->next;
+        }
+    }
+    
+    if(node2!=nullptr){
+        node1->next=node2;
+    }
+    
+    return root1;
+}
+
+int main()
+{
+    
+    ListNode* head=new ListNode(0);
+    ListNode* root1=head;
+    ListNode* cir=new ListNode(0);
+    ListNode* root2=cir;
+    for(int i=1;i<10;i++){
+        head->next=new ListNode(i);
+        cir->next=new ListNode(3*i);
+        head=head->next;
+        cir=cir->next;
+    }
+    printl(root1);
+    printl(root2);
+    
+    ListNode* mroot=mergel(root1,root2);
+    printl(mroot);
+    
+    return 0;
+}
+
 ```
 
