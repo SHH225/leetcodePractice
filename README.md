@@ -68,3 +68,4 @@
 * [剑指 22 -  链表的倒数第k个节点](./backkoflist/backkoflist.md)
 * [剑指 23 -  寻找链表入口处节点](./findcirclein/findcirclein.md)
 * [剑指 24 -  反转链表](./revlist/revlist.md)
+* [剑指 26 -  树的子结构](./issubtree/issubtree.md)
