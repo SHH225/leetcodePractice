@@ -73,3 +73,4 @@
 * [解数独](./sukdo/sukdo.md)
 * [三数之和](./threesum/threesum.md)
 * [剑指 29 -  顺时针打印矩阵](./clockwiseRead/clockwiseRead.md)
+* [剑指 30/31 -  min栈/压入弹出栈合法](./minispoporder/minispoporder.md)
