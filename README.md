@@ -72,3 +72,4 @@
 * [剑指 27/28 -  树的镜像/判断对称](./mirrSym/mirrSym.md)
 * [解数独](./sukdo/sukdo.md)
 * [三数之和](./threesum/threesum.md)
+* [剑指 29 -  顺时针打印矩阵](./clockwiseRead/clockwiseRead.md)
