@@ -131,6 +131,28 @@ void levelprintTree(TreeNode* root){
             if(tmp->right)s.push(tmp->right);
         }
 }
+void findpathnum(TreeNode* root,int sum,vector<int> st,int target){
+    if(root==nullptr)return;
+    sum+=root->value;
+        st.push_back(root->value);
+    
+    
+    if(sum==target&&root->left==nullptr&&root->right==nullptr){
+        for(int i=0;i<st.size();i++){
+            cout<<st[i]<<" ";
+        }
+        cout<<endl;
+    }
+    
+    if(root->left)
+        findpathnum(root->left, sum,st,target);
+    
+    if(root->right)
+        findpathnum(root->right, sum, st,target);
+    
+    st.pop_back();
+    
+}
 int main(){
     int pre[8]={1,2,4,7,3,5,6,8};
     int ino[8]={4,7,2,1,5,3,8,6};
