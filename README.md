@@ -1,6 +1,9 @@
 # LeetCodePractice
 
 ### **目录**
+
+### leetcode
+
 * [两数之和](./two_number_1/two_number_1.md)
 * [两数相加](./two_number_2/two_number_2.md)
 * [最长无重复子串](./LongestUniqueString/LongestUniqueString.md)
@@ -45,6 +48,10 @@
 * [二叉树的遍历方式](./binaryTreeRead/binaryTreeRead.md)
 * [isValidSudoku](./isValidSudoku/isValidSudoku.md)
 * [寻找重复的子树](./findDuplicateSubtrees/findDuplicateSubtrees.md)
+* [三数之和](./threesum/threesum.md)
+
+### 面试
+
 * [等比数列求和（大数）](./largemulti/largemulti.md)
 * [最长的刀](./knife/knife.md)
 * [集合操作](./numbermanul/numbermanul.md)
@@ -52,7 +59,6 @@
 * [开两个线程交替输出](./threadswitchOutput/threadswitchOutput.md)
 * [找到两个数组中相差最小的两个数](./findmincutintwoseq/findmincutintwoseq.md)
 * [解数独](./sukdo/sukdo.md)
-* [三数之和](./threesum/threesum.md)
 
 ### 剑指
 
