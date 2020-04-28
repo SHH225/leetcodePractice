@@ -31,6 +31,7 @@ public:
        sort(nums.begin(),nums.end());
        for(int i=0;i<n-2;i++){
            if(i>0&&nums[i]==nums[i-1])continue;
+           //为何是i i-1而不是i i+1，因为当i和i+1相同时 i与n-1包含的数字更多，并且可能存在多组解，若跳过可能会出现解的缺失的情况
           int f=nums[i];
            int l=i+1;
            int r=n-1;
