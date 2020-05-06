@@ -88,3 +88,4 @@
 * [剑指 32 -  分行之字型打印二叉树](./zhiPrintTree/zhiPrintTree.md)
 * [剑指 35 -  复制复杂链表](./ComplexListNode/ComplexListNode.md)
 * [剑指 36 -  二叉搜索树转双向链表](./convertToreList/convertToreList.md)
+* [剑指 37 -  序列化二叉树](./serializeTree/serializeTree.md)
