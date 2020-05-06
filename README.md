@@ -89,3 +89,4 @@
 * [剑指 35 -  复制复杂链表](./ComplexListNode/ComplexListNode.md)
 * [剑指 36 -  二叉搜索树转双向链表](./convertToreList/convertToreList.md)
 * [剑指 37 -  序列化二叉树](./serializeTree/serializeTree.md)
+* [剑指 38 -  字符串排列](./strcombine/strcombine.md)
