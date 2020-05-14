@@ -90,3 +90,4 @@
 * [剑指 36 -  二叉搜索树转双向链表](./convertToreList/convertToreList.md)
 * [剑指 37 -  序列化二叉树](./serializeTree/serializeTree.md)
 * [剑指 38 -  字符串排列](./strcombine/strcombine.md)
+* [剑指 39 -  查找数组中出现次数超过一半的数字](./majorityElement/majorityElement.md)
