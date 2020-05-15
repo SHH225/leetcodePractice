@@ -89,5 +89,88 @@ int main(){
     
     return 0;
 }
+/*
+#include <iostream>
+using namespace std;
+struct ListNode{
+    int val;
+    ListNode* next;
+    ListNode(int x):val(x),next(nullptr){}
+};
+int getstand(int *a,int low,int high){
+    if(a==nullptr)return 0;
+    int key=a[low];
+    while(low<high){
+        while(low<high&&a[high]>=key)
+            high--;
+        a[low]=a[high];
+        while(low<high&&a[low]<=key)
+            low++;
+        a[high]=a[low];
+        
+    }
+    a[low]=key;
+    return low;
+}
+void quickSort(int *a,int low,int high){
+    if(low<high){
+        int mid=getstand(a, low,high);
+        quickSort(a, low, mid-1);
+        quickSort(a, mid+1, high);
+    }
+}
+void swapNV(ListNode* a,ListNode* b){
+    int tmp=a->val;
+    a->val=b->val;
+    b->val=tmp;
+}
+ListNode* getmid(ListNode* low,ListNode* high){
+    if(low==high||low->next==high)return low;
+    ListNode* node=low;
+    ListNode* st=low;
+    int key=low->val;
+    while(node){
+        if(node->val<key){
+            st=st->next;
+            swapNV(node,st);
+        }
+        node=node->next;
+    }
+    swapNV(st,low);
+    return st;
+}
+void listQuickSort(ListNode* low,ListNode* high){
+    if(low==high||low->next==high)return;
+    ListNode* mid=getmid(low, high);
+    listQuickSort(low, mid);
+    listQuickSort(mid->next, high);
+}
+void printLIst(ListNode* head){
+    while(head){
+        cout<<head->val<<" ";
+        head=head->next;
+    }
+    cout<<endl;
+}
+int main()
+{
+    int a[10]={2,5,2,3,7,0,9,1,5,6};
+    ListNode* head=new ListNode(2);
+    ListNode* high=nullptr;
+    ListNode* node=head;
+    for(int i=1;i<10;i++){
+        
+        node->next=new ListNode(a[i]);
+        node=node->next;
+    }
+    listQuickSort(head,high);
+    printLIst(head);
+    quickSort(a, 0, 9);
+    for(auto i:a){
+        cout<<i<<" ";
+    }
+    return 0;
+}
+*/
 
 ```
