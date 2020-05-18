@@ -17,7 +17,7 @@
 
 说明：
 
-假设我们的环境只能存储 32 位大小的有符号整数，那么其数值范围为 [−231,  231 − 1]。如果数值超过这个范围，请返回  INT_MAX (231 − 1) 或 INT_MIN (−231) 。
+假设我们的环境只能存储 32 位大小的有符号整数，那么其数值范围为 [−2_31,  2_31 − 1]。如果数值超过这个范围，请返回  INT_MAX (2_31 − 1) 或 INT_MIN (−2_31) 。
 
 示例 1:
 
@@ -54,32 +54,47 @@
 class Solution {
 public:
     int myAtoi(string str) {
-        int len = str.length();
-        long b = 0;
-        bool realin=false;
-        int positive=1;
+        if(str=="")return 0;
+        int len=str.length();
+        bool haspn=0,hasnum=0;
+        bool isneg=1;
+        string res="";
         for(int i=0;i<len;i++){
-            if((str[i]>='0'&&str[i]<='9')||str[i]=='-'||str[i]==' '||str[i]=='+'){
-                if(realin&&(str[i]<'0'||str[i]>'9'))break;
-                if(str[i]==' ')continue;
-                if(str[i]=='-'||str[i]=='+'){
-                    if(str[i]=='-')positive=-1;
-                    realin=true;
-                    continue;
-                    }
-                b=b*10+(str[i]-'0')%10;
-                if(b*positive>INT_MAX){
-                    return INT_MAX;
-                    }else if(b*positive<INT_MIN){
-                        return INT_MIN;
-                        }
-                realin=true;
-            }else{
-                if(realin)break;
-                return 0;
-            }
+            //总体过滤
+            if(!(str[i]=='+'||str[i]=='-'||str[i]==' '||(str[i]>='0'&&str[i]<='9')))break;
+            //最开始部分有空格
+            if(str[i]==' '&&!haspn&&!hasnum)continue;
+            //空格前有符号/数字
+            if(str[i]==' '&&(haspn||hasnum))break;
+            //在符号前已经出现过数字或者符号
+            if((str[i]=='-'||str[i]=='+')&&(haspn||hasnum))break;
+            //符号记录
+            if(str[i]=='-'){
+                isneg=0;haspn=1;
+                }
+            if(str[i]=='+')haspn=1;
+            //数字记录
+            if(str[i]>='0'&&str[i]<='9'){
+                res+=str[i];
+                hasnum=1;
+                }
         }
-            return b*positive;
+        long long a=0;
+        for(int i=0;i<res.length();i++){
+            if(res[i]<'0'||res[i]>'9')return 0;
+            if(i!=0)
+                a=a*10;
+            a+=res[i]-'0';
+            if(isneg&&a>INT_MAX)
+                return INT_MAX;
+            if(!isneg&&-a<INT_MIN)
+                return INT_MIN;
+        }
+        if(isneg){
+                return a;
+        }else{
+                return -a;
+        }
     }
 };
 ```
