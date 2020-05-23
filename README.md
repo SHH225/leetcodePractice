@@ -55,6 +55,7 @@
 * [数字 1 的个数](./countDigitOne/countDigitOne.md)
 * [判断平衡二叉树](./isBalanced/isBalanced.md)
 
+
 ### 面试
 
 * [等比数列求和（大数）](./largemulti/largemulti.md)
@@ -94,3 +95,4 @@
 * [剑指 37 -  序列化二叉树](./serializeTree/serializeTree.md)
 * [剑指 38 -  字符串排列](./strcombine/strcombine.md)
 * [剑指 39 -  查找数组中出现次数超过一半的数字](./majorityElement/majorityElement.md)
+* [剑指 44 -  数字序列中某一位的数字](./digitAtIndex/digitAtIndex.md)
