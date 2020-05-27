@@ -96,7 +96,6 @@ void inprintTree(TreeNode* root){
     }
     
 }
-
 void bacprintTree(TreeNode* root){
     stack<TreeNode*> s;
     TreeNode* lastvist=root;
