@@ -47,6 +47,30 @@ public:
       return max;
     }
 };
+//code2
+
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        int len=s.length();
+        if(!len)return 0;
+        int left=0,right=0,max=0;
+        unordered_map<char,int> mp;
+        for(int i=0;i<len;i++){
+            if(mp.find(s[i])!=mp.end()&&mp[s[i]]>=left){
+                if(i<len-1)
+                    left=mp[s[i]]+1;
+                    mp[s[i]]=i;
+            }else{
+                right=i;
+                mp[s[i]]=i;
+                int temp=right-left+1;
+                max=max>temp?max:temp;
+            }
+        }
+        return max;
+    }
+};
 
 //GoodCode
 class Solution {
