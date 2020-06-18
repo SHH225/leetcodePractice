@@ -97,3 +97,4 @@
 * [剑指 39 -  查找数组中出现次数超过一半的数字](./majorityElement/majorityElement.md)
 * [剑指 44 -  数字序列中某一位的数字](./digitAtIndex/digitAtIndex.md)
 * [剑指 45 -  把数组排成最小的数](./printMinNumber/printMinNumber.md)
+* [剑指 46 -  把数字翻译成字符串](./translateNum/translateNum.md)
