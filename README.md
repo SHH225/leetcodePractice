@@ -100,3 +100,4 @@
 * [剑指 46 -  把数字翻译成字符串](./translateNum/translateNum.md)
 * [剑指 47 -  礼物的最大价值](./maxValue/maxValue.md)
 * [剑指 48 -  丑数](./nthUglyNumber/nthUglyNumber.md)
+* [剑指 51 -  数组中的逆序对](./reversePairs/reversePairs.md)
