@@ -19,55 +19,32 @@
  */
 class Solution {
 public:
+int getlen(ListNode* head){
+    int count=0;
+    ListNode* node=head;
+    while(node){
+        node=node->next;
+        count++;
+    }
+    return count;
+}
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         if(headA==nullptr||headB==nullptr)return nullptr;
-        if(headA==headB)return headA;
-        int count=0;
-        ListNode* node=nullptr;
-        ListNode* n1=headA;
-        ListNode* n2=headB;
-        while(n1&&n2){
-            n1=n1->next;
-            n2=n2->next;
+        ListNode* re=nullptr;
+        int lena=getlen(headA);
+        int lenb=getlen(headB);
+        if(lena<lenb)return getIntersectionNode(headB,headA);
+        int cut=lena-lenb;
+        while(cut>0){
+            headA=headA->next;
+            cut--;
         }
-        if(n1){
-            while(n1){
-            n1=n1->next;
-            count++;
-            }
-            while(count>0){
-                headA=headA->next;
-                count--;
-            }
-            while(headA&&headB&&headA!=headB){
-                headA=headA->next;
-                headB=headB->next;
-            }
-            if(headA){node=headA;
-            }
-
-        }else if(n2){
-            while(n2){
-            n2=n2->next;
-            count++;
-            }
-             while(count>0){
-                headB=headB->next;
-                count--;
-            }
-            while(headA&&headB&&headA!=headB){
-                headA=headA->next;
-                headB=headB->next;
-            }
-            if(headA){node=headA;}
-        }else{
-             while(headA&&headB&&headA!=headB){
-                headA=headA->next;
-                headB=headB->next;
-            }
-            if(headB){node=headB;}
+        while(headA!=headB){
+            headA=headA->next;
+            headB=headB->next;
         }
-        return node;
+        re=headA;
+        return re;
     }
 };
 ```

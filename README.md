@@ -102,3 +102,4 @@
 * [剑指 48 -  丑数](./nthUglyNumber/nthUglyNumber.md)
 * [剑指 51 -  数组中的逆序对](./reversePairs/reversePairs.md)
 * [剑指 52 -  两个链表的第一个公共节点](./getIntersectionNode/getIntersectionNode.md)
+* [剑指 54 -  二叉搜索树的第k大节点](./kthLargest/kthLargest.md)
