@@ -53,48 +53,64 @@
 ```c++
 class Solution {
 public:
-    int myAtoi(string str) {
-        if(str=="")return 0;
+    int strToInt(string str) {
+        int res;
+        string re="";
         int len=str.length();
-        bool haspn=0,hasnum=0;
-        bool isneg=1;
-        string res="";
+        bool frontSpace=true;
+        bool innum=false;
+        bool insign=false;
+        int odd=0;
         for(int i=0;i<len;i++){
-            //总体过滤
-            if(!(str[i]=='+'||str[i]=='-'||str[i]==' '||(str[i]>='0'&&str[i]<='9')))break;
-            //最开始部分有空格
-            if(str[i]==' '&&!haspn&&!hasnum)continue;
-            //空格前有符号/数字
-            if(str[i]==' '&&(haspn||hasnum))break;
-            //在符号前已经出现过数字或者符号
-            if((str[i]=='-'||str[i]=='+')&&(haspn||hasnum))break;
-            //符号记录
+             //跳过最前面的空格
+            if(frontSpace&&str[i]==' ')continue;
+             //end
+            if(innum&&(str[i]>'9'||str[i]<'0'))break;
+            //f num
+            if(frontSpace&&str[i]!='-'&&str[i]!='+'&&(str[i]>'9'||str[i]<'0'))
+            return 0;
+
+            //after sign error
+            if(insign&&(str[i]>'9'||str[i]<'0'))return 0;
+
+            //+ - 
             if(str[i]=='-'){
-                isneg=0;haspn=1;
-                }
-            if(str[i]=='+')haspn=1;
-            //数字记录
+                odd=1;
+                insign=true;
+                frontSpace=false;
+            }
+            if(str[i]=='+'){
+                insign=true;
+                frontSpace=false;
+            }
+            //nums
             if(str[i]>='0'&&str[i]<='9'){
-                res+=str[i];
-                hasnum=1;
-                }
+                re+=str[i];
+                frontSpace=false;
+                innum=true;
+            }
+            
         }
-        long long a=0;
-        for(int i=0;i<res.length();i++){
-            if(res[i]<'0'||res[i]>'9')return 0;
-            if(i!=0)
-                a=a*10;
-            a+=res[i]-'0';
-            if(isneg&&a>INT_MAX)
-                return INT_MAX;
-            if(!isneg&&-a<INT_MIN)
-                return INT_MIN;
+        long long sum=0;
+        for(int i=0;i<re.length();i++){
+            sum=sum*10+re[i]-'0';
+            if(sum>INT_MAX)break;
         }
-        if(isneg){
-                return a;
+
+        if(odd){
+            if(-sum<INT_MIN){
+                res=INT_MIN;
+            }else{
+                res=-sum;
+            }
         }else{
-                return -a;
+            if(sum>INT_MAX){
+                res=INT_MAX;
+            }else{
+            res=sum;
+            }
         }
+        return res;
     }
 };
 ```
@@ -104,6 +120,8 @@ public:
 测试用例多想几个
 
 "+1 2" =>1
+
+3.14. => 3
 
 越界数
 
